@@ -6597,8 +6597,8 @@
           ]
         },
         {
-          "type": "PREC",
-          "value": 1,
+          "type": "PREC_RIGHT",
+          "value": 0,
           "content": {
             "type": "SEQ",
             "members": [
@@ -6607,8 +6607,16 @@
                 "value": "`"
               },
               {
-                "type": "SYMBOL",
-                "name": "_statements"
+                "type": "CHOICE",
+                "members": [
+                  {
+                    "type": "SYMBOL",
+                    "name": "_statements"
+                  },
+                  {
+                    "type": "BLANK"
+                  }
+                ]
               },
               {
                 "type": "STRING",
